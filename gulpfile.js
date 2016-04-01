@@ -1,3 +1,5 @@
+/* jshint node: true */
+
 'use strict';
 
 var autoprefixer = require('autoprefixer');
@@ -16,11 +18,8 @@ var paths = {
     scripts: {
         all: 'assets/scripts/**/*.js',
         copy: [
-            'assets/scripts/index.js'
         ],
         join: [
-            'assets/scripts/vendor/jquery.js',
-            'assets/scripts/common.js'
         ]
     },
     styles: {
