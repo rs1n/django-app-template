@@ -13,6 +13,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 
+// Customize your assets path here
 var path = {
   src: {
     images: 'assets/images/**/*',
@@ -25,13 +26,13 @@ var path = {
     },
     styles: {
       all:  'assets/styles/**/*.scss',
-      main: 'assets/styles/**/application.scss'
+      main: 'assets/styles/application.scss'
     }
   },
   dest: {
-    images:  'static/_appname_/images',
-    scripts: 'static/_appname_/scripts',
-    styles:  'static/_appname_/styles'
+    images:  'static/{{ app_name }}/images',
+    scripts: 'static/{{ app_name }}/scripts',
+    styles:  'static/{{ app_name }}/styles'
   }
 };
 
