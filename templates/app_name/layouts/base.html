@@ -1,0 +1,36 @@
+{% load static %}
+{% load i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Application | {% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static '{{ app_name }}/assets/bundle.css' %}">
+
+    <!-- Page specific header -->
+    {% block page_header %}{% endblock %}
+    <!-- End of Page specific header -->
+</head>
+
+<body>
+
+<!-- Page content -->
+{% block content %}{% endblock %}
+<!-- End of Page content -->
+
+<script src="{% static '{{ app_name }}/assets/bundle.js' %}"></script>
+
+<!-- Page specific footer -->
+{% block page_footer %}{% endblock %}
+<!-- End of Page specific footer -->
+</body>
+
+</html>
