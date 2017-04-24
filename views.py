@@ -1,4 +1,4 @@
-from django.shortcuts import render
+{{ unicode_literals }}from django.shortcuts import render
 
 
 # Create your views here.
