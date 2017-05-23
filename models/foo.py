@@ -4,8 +4,9 @@ from django.utils.translation import ugettext_lazy as _
 from . import timestampable
 
 
-# A sample model.
 class Foo(timestampable.Timestampable):
+    'A sample model.'
+
     name = models.CharField(max_length=510, default='', verbose_name=_('name'))
 
     def __str__(self):
