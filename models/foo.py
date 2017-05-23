@@ -7,7 +7,8 @@ from . import timestampable
 class Foo(timestampable.Timestampable):
     'A sample model.'
 
-    name = models.CharField(max_length=510, default='', verbose_name=_('name'))
+    name = models.CharField(max_length=255, verbose_name=_('name'))
+    description = models.TextField(default='', verbose_name=_('description'))
 
     def __str__(self):
         return self.name
