@@ -7,3 +7,8 @@ from . import models
 @admin.register(models.Foo)
 class FooAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(models.User)
+class UserAdmin(admin.ModelAdmin):
+    pass
