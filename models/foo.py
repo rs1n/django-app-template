@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from . import timestampable
 
@@ -7,7 +7,7 @@ from . import timestampable
 class Foo(timestampable.Timestampable):
     'A sample model.'
 
-    name = models.CharField(max_length=255, verbose_name=_('name'))
+    name = models.CharField(max_length=100, verbose_name=_('name'))
     description = models.TextField(
         blank=True, default='', verbose_name=_('description'))
 

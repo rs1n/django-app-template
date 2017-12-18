@@ -1,5 +1,5 @@
 # django-app-template
-A  Django app template.
+A Django app template.
 
 ## Creating Your App
 

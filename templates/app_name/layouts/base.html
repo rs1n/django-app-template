@@ -4,17 +4,17 @@
 <html lang="{{ LANGUAGE_CODE }}">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{% block title %}{% endblock %} | My Application</title>
+  <title>{% block title %}{% endblock %} | My Application</title>
 
-    {% load static %}
-    <link rel="stylesheet" href="{% static '{{ app_name }}/assets/bundle.css' %}">
+  {% load static %}
+  <link rel="stylesheet" href="{% static '{{ app_name }}/assets/bundle.css' %}">
 
-    <!-- Page specific header -->
-    {% block page_header %}{% endblock %}
-    <!-- End of Page specific header -->
+  <!-- Page specific header -->
+  {% block page_header %}{% endblock %}
+  <!-- End of Page specific header -->
 </head>
 
 <body>

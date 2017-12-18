@@ -7,7 +7,13 @@ from . import {{ app_name }}_view
 logger = logging.getLogger(__name__)
 
 
-class FooList({{ app_name }}_view.{{ camel_case_app_name }}View):
+class FooView({{ app_name }}_view.{{ camel_case_app_name }}View):
+    'A base class for all foo views.'
+
+    pass
+
+
+class FooList(FooView):
     'A sample view.'
 
     def get(self, request):
